@@ -1,13 +1,85 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  width: 60%;
+}
+
+.imgDiv {
+  width: 42rem;
+}
+
+.imgDivMob {
+  display: none;
+  margin: 6rem 0rem 5rem 0rem;
+}
+
+.image {
+  height: 37rem;
+  width: 42rem;
+}
+
+.infoDiv {
+  width: 32rem;
+}
+
+.head {
+  font-size: 6.4rem;
+  font-weight: 100;
+  margin-bottom: 2rem;
+
+}
+
+.description {
+  font-weight: lighter;
+  font-size: 2.8rem;
+}
+
+.link {
+  font-weight: bold;
+  font-size: 1.9rem;
+  margin-top: 3rem;
+  margin-right: 2rem;
+}
+
+.icon {
+  height: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 40%;
+  }
+
+  .infoDiv {
+    width: 100%;
+  }
+
+  .image {
+    width: 100%;
+    height: 48rem;
+  }
+
+  .imgDivMob {
+    display: block;
+    width: 100%;
+  }
+
+  .imgDiv {
+    display: none;
+  }
+
+  .link {
+    color: #3C83FB;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 45%;
+  }
 }
